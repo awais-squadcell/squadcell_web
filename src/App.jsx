@@ -9,7 +9,7 @@ import Terms from "./pages/Terms";
 function App() {
   return (
     <Router>
-    <div className="w-full h-screen bg-zinc-900 text-zinc-50">
+    <div className="w-full h-full bg-zinc-900 text-zinc-50">
       <Head/>
       <Routes>
         <Route path="/" element={<Home/>}/>
