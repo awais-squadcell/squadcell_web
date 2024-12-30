@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PropTypes from 'prop-types';
 import Footer from "./components/Footer";
 import Head from "./components/Head";
 import Links from "./components/Links";
@@ -10,14 +9,14 @@ import { useState } from "react";
 
 function App() {
 
-  const [theme, setTheme] = useState('Dark Mode');
+  const [theme, setTheme] = useState("Light Mode");
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'Light Mode' ? 'Dark Mode' : 'Light Mode'));};
+    setTheme((prevTheme) => (prevTheme === "Dark Mode" ? "Light Mode" : "Dark Mode"));
+  };
 
   return (
     <Router>
-      <div className={`w-full h-full ${theme === 'Dark Mode' ? 'bg-zinc-200' : 'bg-zinc-900'
-        } ${theme === 'Dark Mode' ? 'text-zinc-900' : 'text-zinc-200'}`}>
+      <div className={`w-full h-full ${theme === "Light Mode" ? "bg-zinc-900 text-zinc-200" : "bg-zinc-200 text-zinc-900"}`}>
         <Head theme={theme} toggleTheme={toggleTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,11 +29,5 @@ function App() {
     </Router>
   );
 }
-
-// Prop validation for App component
-App.propTypes = {
-  theme: PropTypes.oneOf(['Light Mode', 'Dark Mode']).isRequired,
-  toggleTheme: PropTypes.func.isRequired,
-};
 
 export default App;
