@@ -12,9 +12,9 @@ function Links() {
     lg:text-[3vw]
     xl:text-[2.5vw] 
     2xl:text-[2.5vw] gap-[2vw]">  
-      <a href="https://www.facebook.com/GameDevelopmentCompany"><FaFacebook /></a>
-      <a href="https://www.instagram.com/squadcelloffical/"><FaInstagram /></a>
-      <a href="https://www.linkedin.com/company/gamedevelopmentcompany"><FaLinkedinIn /></a>
+      <a target="blank" href="https://www.facebook.com/GameDevelopmentCompany"><FaFacebook /></a>
+      <a target="blank"  href="https://www.instagram.com/squadcelloffical/"><FaInstagram /></a>
+      <a target="blank"  href="https://www.linkedin.com/company/gamedevelopmentcompany"><FaLinkedinIn /></a>
     </div>
     <div className="border-zinc-600 border-b-[0.25vh]"></div>
     </div>
