@@ -15,7 +15,7 @@ function Head({ theme, toggleTheme }) {
       <Link to={'/'}>Squad Cell</Link>
       <button
         onClick={toggleTheme}  
-        className="text-[2.5vw] sm:text-[2vw] md:text-[2vw] lg:text-[1.7vw] xl:text-[1.3vw] 2xl:text-[1.2vw] rounded-3xl m-[2.5vw] sm:m-[2vw] md:m-[1.5vw] lg:m-[1vw] xl:m-[1vw] 2xl:m-[1vw] px-[1vw] border">
+        className="text-[2.7vw] sm:text-[2vw] md:text-[2vw] lg:text-[1.7vw] xl:text-[1.3vw] 2xl:text-[1.2vw] rounded-3xl m-[3vw] sm:m-[2vw] md:m-[1.5vw] lg:m-[1vw] xl:m-[1vw] 2xl:m-[1vw] px-[1vw] border">
         <div className="w-[15vw] sm:w-[13vw] md:w-[12vw] lg:w-[10vw] xl:w-[8vw] 2xl:w-[7vw]">{theme}</div>
       </button>
     </div>
